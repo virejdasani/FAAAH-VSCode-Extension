@@ -1,0 +1,76 @@
+{
+  "name": "faaaaah",
+  "displayName": "FAAAAAH",
+  "description": "Plays a sound when your code has errors.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": ["Other"],
+  "icon": "images/icon.svg",
+  "activationEvents": ["onStartupFinished"],
+  "main": "./out/extension.js",
+  "contributes": {
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "faaaaah-sidebar",
+          "title": "FAAAAAH",
+          "icon": "images/icon.svg"
+        }
+      ]
+    },
+    "views": {
+      "faaaaah-sidebar": [
+        {
+          "type": "webview",
+          "id": "faaaaah.settingsView",
+          "name": "Settings"
+        }
+      ]
+    },
+    "configuration": {
+      "title": "FAAAAAH",
+      "properties": {
+        "faaaaah.soundFile": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to a custom sound file. Leave empty to use the bundled sound."
+        },
+        "faaaaah.minNewErrors": {
+          "type": "number",
+          "default": 1,
+          "description": "Minimum number of new errors required to trigger the sound."
+        },
+        "faaaaah.warningSoundEnabled": {
+          "type": "boolean",
+          "default": false,
+          "description": "Play a sound when warnings increase."
+        },
+        "faaaaah.minNewWarnings": {
+          "type": "number",
+          "default": 1,
+          "description": "Minimum number of new warnings required to trigger the sound."
+        },
+        "faaaaah.warningSoundFile": {
+          "type": "string",
+          "default": "",
+          "description": "Absolute path to a custom warning sound file. Leave empty to use the bundled sound."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.3.0"
+  },
+  "dependencies": {
+    "play-sound": "^1.1.6"
+  }
+}
