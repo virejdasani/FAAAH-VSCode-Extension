@@ -1,13 +1,14 @@
 {
   "name": "faaaaah",
-  "displayName": "FAAAAAH",
+  "displayName": "FAAAAAH - Error Sound Alert",
   "description": "Plays a sound when your code has errors.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.85.0"
   },
+  "publisher": "VirejDasani",
   "categories": ["Other"],
-  "icon": "images/icon.svg",
+  "icon": "images/icon.png",
   "activationEvents": ["onStartupFinished"],
   "main": "./out/extension.js",
   "contributes": {
