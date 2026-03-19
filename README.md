@@ -24,7 +24,7 @@ Open the **FAAAAAH** panel in the activity bar (left sidebar) to configure:
 
 ## Installation
 
-Search for **FAAAAAH** in the VS Code Extensions panel, or install it from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VirejDasani.faaaaah).
+Search for **FAAAAAH** in the VS Code Extensions panel, or install it directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=VirejDasani.faaaaah&ssr=false#overview).
 
 ## Custom Sounds
 
